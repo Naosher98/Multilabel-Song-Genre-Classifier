@@ -6,10 +6,11 @@ app = Flask(__name__)
 @app.route("/", methods=['GET', 'POST'])
 def index():
     if request.method == "POST":
-        input_text = request.form['text']
+        input_text = request.form['text'].replace("\n", " ")
         output = predict_genres(input_text)[0]
         confidence_list = output['confidences']
-        labels = [elem['label'] for elem in confidence_list if elem['confidence'] >= 0.5 ]
+        labels = [elem['label'] for elem in confidence_list if elem['confidence'] >= 0.3 ]
+        # labels = labels[:5]
         label_text = ""
         for idx, label in enumerate(labels):
             label_text = label_text + label

@@ -1,63 +1,96 @@
+<!DOCTYPE html>
 <html>
-
-<head>
+  <head>
+    <title>Song Genre Classifier</title>
     <style>
-        .head {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 30px;
-            height: 5ch;
-        }
+      body {
+        background-image: url('https://wallpapers.com/images/file/music-4k-doodle-fhosgwe4adxuunwq.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
 
-        .center {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            font-size: 25px;
-        }
+      .head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5rem;
+        height: 5ch;
+        background-color: #410303;
+        color: #fff;
+      }
 
-        form {
-            height: 500px;
-            width: 1000px;
-            background-color: rgb(156, 128, 233);
-            padding: 20px;
-            border-radius: 10px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 5ch);
+      }
 
-        #text {
-            height: 100px;
-            width: 500px;
-            font-size: 20px;
-        }
+      form {
+        height: 60%;
+        max-height: 500px;
+        width: 80%;
+        max-width: 1000px;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
 
-        textarea {
-            height: 500px;
-            width: 500px;
-            font-size: 20px;
-        }
+      #text {
+        height: 100px;
+        width: 100%;
+        max-width: 500px;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        border: 2px solid #aaa;
+        border-radius: 5px;
+        resize: none;
+      }
 
-        input {
-            font-size: 20px;
-            padding: 10px;
-        }
+      textarea {
+        height: 80%;
+        width: 100%;
+        max-width: 500px;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        border: 2px solid #aaa;
+        border-radius: 5px;
+        resize: none;
+      }
+
+      input[type="submit"] {
+        font-size: 1.2rem;
+        padding: 0.5rem 2rem;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #555;
+      }
+
     </style>
+  </head>
+
+  <body>
     <div class="head"><b>Song Genre Classifier</b></div>
-</head>
-
-<body>
     <div class="center">
-        <form action="/" method="post">
-            <label for="text"><b>Enter Song Lyrics</b></label> <br />
-            <textarea id="text" name="text"></textarea> <br />
-            <input type="submit" value="Submit">
-        </form>
+      <form action="/" method="post">
+        <label for="text"><b>Enter Song Lyrics</b></label><br />
+        <textarea id="text" name="text"></textarea><br />
+        <input type="submit" value="Submit">
+      </form>
     </div>
-</body>
-
+  </body>
 </html>
