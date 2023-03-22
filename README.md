@@ -22,3 +22,14 @@ The accuracy score of the model is:<br/>
 F1 Score (Micro) = 0.5965437022266534<br/>
 F1 Score (Macro) = 0.26071636343696014
 
+## Model Compression with ONNX:
+To deploy the model, the model's size needed to be compressed. The initial model was 313.8 MB in size and through onnx quantization method the final size came down to 78.7 MB and a bit faster at the same time.<br/>
+
+## Model deployment
+The model was deployed on Hugging Face, and the model API was connected to a website that was set up on Render using Flask.
+
+## Deployment of API on Render:
+The deployed model API has been integrated into this [render]([https://naosher98.github.io/Ball-Recognizer/),](https://song-genre-classifier.onrender.com) allowing users to easily access and test the model's capabilities. 
+<a href="[https://naosher98.github.io/Ball-Recognizer/ball_recognizer.html](https://song-genre-classifier.onrender.com)">
+<img src = "deployment\Web_app.png" width = "900" height = "450">
+</a>
