@@ -31,10 +31,10 @@ The model was deployed on Hugging Face, and the model API was connected to a web
 ## Deployment of API on Render:
 The deployed model API has been integrated into this [render]([https://naosher98.github.io/Ball-Recognizer/),](https://song-genre-classifier.onrender.com) allowing users to easily access and test the model's capabilities. .<br/>
 Here is the website:.<br/>
-<a href="[https://naosher98.github.io/Ball-Recognizer/ball_recognizer.html](https://song-genre-classifier.onrender.com)">
+<a href="https://song-genre-classifier.onrender.com">
 <img src = "data\Capture.PNG" width = "900" height = "450">
-</a>
-Here is the output result:
-<a href="[https://naosher98.github.io/Ball-Recognizer/ball_recognizer.html](https://song-genre-classifier.onrender.com)">
-<img src = "data\Capture1.PNG" width = "900" height = "450">
+</a><br/>
+Here is the output result:<br/>
+<a href="https://song-genre-classifier.onrender.com">
+<img src = "data\Capture1.PNG" width = "450" height = "450">
 </a>
