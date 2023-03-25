@@ -17,7 +17,7 @@ The Websites that are used to collect data are: <br/>
 Initially there were 1741 different genres in the dataset. Out of which, 1604 were rare genres. These rare genres were removed and only 137 were taken for consideration. After that song lyrics without any genres were removed, resulting in 7724 samples.
 
 ## Model Training:
-A `distilrobera-base` model sourced from HuggingFace Transformers was used. This model was finetuned using Fastai and blurr. <br/>
+A `distilroberta-base` model sourced from HuggingFace Transformers was used. This model was finetuned using Fastai and blurr. <br/>
 The accuracy score of the model is:<br/>
 F1 Score (Micro) = 0.5965437022266534<br/>
 F1 Score (Macro) = 0.26071636343696014
